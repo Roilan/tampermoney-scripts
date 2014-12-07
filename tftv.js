@@ -12,10 +12,13 @@ $('document').ready(function() {
     $('#stream-container').prepend('<button id="hideStream">Hide</button>');
     $('#stream-container').prepend('<button id="showStream">Show</button>');
 
+    //fix stream container padding
+    $('#stream-container').css('padding-bottom', '18px');
+    
     //hide chat
     $('#hideStream').on('click', function() {
     	$('#ctrl-container').css('display', 'none');
-    	$('#stream-container').css('padding-right', '0');
+    	$('#stream-container').css('padding-right', '10px');
     });
 
     //show chat
